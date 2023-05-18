@@ -1,0 +1,123 @@
+@import url(' https://fonts.cdnfonts.com/css/panthera?styles=58238 ' ); 
+@import url(' https://fonts.cdnfonts.com/css/beyno?styles=27197 ');
+@import url(' https://fonts.cdnfonts.com/css/wakanda-forever?styles=84151 ' );
+@import url(' https://fonts.cdnfonts.com/css/cantarell?styles=159,158,157,156 ');                            
+
+@font-face {
+    font-family: 'panthera';
+    src: url(../../panthera.ttf);
+}
+@font-face {
+    font-family: 'beyno';
+    src: url(../../BEYNO.ttf);
+    font-size: 32px;
+}
+@font-face {
+    font-family: 'wakanda';
+    src: url(../../wakandaforever-regular.ttf);
+    font-size: 43px;
+}
+@font-face {    
+    font-family: 'cantarell';
+    src: url(../../Cantarell-Regular.ttf);
+}
+:root{
+    --white-color: #fff;
+    --magentalight-color: #efcef2;
+    --grayish-color: #9e97b7;
+    --magentasoft-color: #df99f2;
+    --bluesoft-color: #3d2da6;
+    --blue-color: #07338c;
+    --bluedark-color: #021740;
+    --radial-gradient:(#11213F 0%, #0B0B0B 39,1%, #021740 94,57%) ;
+}
+body{
+    background: radial-gradient(126.67% 350.28% at -21.35% 0%, #11213F 0%, #0B0B0B 39.1%, rgba(2, 23, 64, 0.837641) 94.57%, rgba(2, 23, 64, 0) 100%) ;
+    color: var(--white-color);
+    font-family: 'cantarell';
+
+}
+.container{
+    width: 70%;
+    margin: 0 auto;
+}
+h1{
+    font-family: 'panthera';
+    font-size: 60px;
+    color: var(--magentasoft-color);
+}
+/* Design de la navigation */
+nav{
+    display: block;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    position: absolute;
+    top: 0;
+    width: 20%;
+    left: 70%;
+    justify-content: space-between;
+}
+nav ul a{
+    color: var(--white-color);
+    font-size: 20px;
+    font-weight: 100;
+    font-family: 'beyno';
+    text-decoration: none; 
+}
+nav ul a:hover{
+    font-weight: bold;
+    text-decoration: underline;
+}
+nav ul a:active{
+    color: var(--magentasoft-color);
+    font-weight: bold;
+    text-decoration: underline;
+}
+.logo{
+
+}
+.logo:hover{
+    -webkit-filter: invert(67%) sepia(10%) saturate(2002%) hue-rotate(233deg) brightness(104%) contrast(90%);
+    filter: invert(67%) sepia(10%) saturate(2002%) hue-rotate(233deg) brightness(104%) contrast(90%);
+}
+    .navbar { 
+    width: 80%;
+    margin: 0 auto;
+}
+/*Design scroll*/
+.scroll {
+    display: flex;
+    position: fixed;
+    top: 70px;
+    flex-direction: column;
+    padding-left: 50px;
+    margin-top: 150px;
+}
+.scroll .social{
+    padding: 10px 2px;
+}
+.scroll .social:hover{
+    -webkit-filter:invert(94%) sepia(45%) saturate(7196%) hue-rotate(202deg) brightness(140%) contrast(98%);
+    filter:invert(94%) sepia(45%) saturate(7196%) hue-rotate(202deg) brightness(140%) contrast(98%);
+}
+.long-bar{
+    border-left: 2px solid var(--magentalight-color);
+    position: fixed;
+    width: 2px;
+    height: 41%;
+    left: 50px;
+    margin-top: 0;
+}
+.short-bar{
+    border-right: 2px solid var(--magentalight-color);
+    position: fixed;
+    width: 2px;
+    height: 22%;
+    left: 70px;
+    margin-top: 0;
+}

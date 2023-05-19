@@ -21,6 +21,11 @@
     font-family: 'cantarell';
     src: url(../../Cantarell-Regular.ttf);
 }
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}   
 :root{
     --white-color: #fff;
     --magentalight-color: #efcef2;
@@ -35,6 +40,7 @@ body{
     background: radial-gradient(126.67% 350.28% at -21.35% 0%, #11213F 0%, #0B0B0B 39.1%, rgba(2, 23, 64, 0.837641) 94.57%, rgba(2, 23, 64, 0) 100%) ;
     color: var(--white-color);
     font-family: 'cantarell';
+    font-size: 16px;
 
 }
 .container{
@@ -45,6 +51,20 @@ h1{
     font-family: 'panthera';
     font-size: 60px;
     color: var(--magentasoft-color);
+}
+h2{
+    font-family: 'beyno';
+    font-size: 32px;
+    color: var(--magentasoft-color);
+}
+h3{
+    font-family: 'beyno';
+    font-size: 20px;
+    color: var(--magentasoft-color);
+}
+.voir-plus{
+    text-decoration: underline;
+
 }
 /* Design de la navigation */
 nav{
@@ -79,7 +99,7 @@ nav ul a:active{
     text-decoration: underline;
 }
 .logo{
-
+    padding: 0px;
 }
 .logo:hover{
     -webkit-filter: invert(67%) sepia(10%) saturate(2002%) hue-rotate(233deg) brightness(104%) contrast(90%);
@@ -96,10 +116,10 @@ nav ul a:active{
     top: 70px;
     flex-direction: column;
     padding-left: 50px;
-    margin-top: 150px;
+    margin-top: 250px;
 }
 .scroll .social{
-    padding: 10px 2px;
+    padding: 10px 10px;
 }
 .scroll .social:hover{
     -webkit-filter:invert(94%) sepia(45%) saturate(7196%) hue-rotate(202deg) brightness(140%) contrast(98%);
@@ -109,7 +129,7 @@ nav ul a:active{
     border-left: 2px solid var(--magentalight-color);
     position: fixed;
     width: 2px;
-    height: 41%;
+    height: 52%;
     left: 50px;
     margin-top: 0;
 }
@@ -117,7 +137,69 @@ nav ul a:active{
     border-right: 2px solid var(--magentalight-color);
     position: fixed;
     width: 2px;
-    height: 22%;
+    height: 34%;
     left: 70px;
     margin-top: 0;
+}
+/* Design section - personnage-principal*/
+#personnage-principal .content{
+    padding-top: 200px;
+    margin-left: -40px;
+    margin-right: -90px;
+    display: flex;
+    flex-direction: row;
+}
+#personnage-principal .personnage-text{
+    margin-left: 50%;
+    margin: 10px;
+}
+#personnage-principal p{
+    padding-top: 50px;
+    text-align: left;
+    width: 105%;
+    z-index: 1;
+}
+.black-panther{
+    display: flex;
+    margin-top: -200px;
+    margin-right: -7%;
+    z-index: 2;
+    width: auto;
+}
+
+/* Design section - personnage*/
+#personnage{
+    margin-left: -100px;
+    margin: 5px 0px;
+    padding: 20px 5px;
+}
+#personnage .container{
+    display: flex;
+    position: relative;
+    background-color: var(--bluedark-color);
+    padding-right: 2px;
+    width: 80%;
+
+}
+#personnage .content{
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding: 0px 15px;
+    padding-left: 40px;
+    padding-right: 0;
+    margin: 5px 5px;
+    width: 700%;
+
+}
+#personnage .personnage-image{
+    position: relative;
+    padding: 1px ;
+    margin: 20px;
+    width: 100%;
+}
+#personnage .personnage-text{
+    display:block;
+    text-align: justify;
+    width: 200%;
 }

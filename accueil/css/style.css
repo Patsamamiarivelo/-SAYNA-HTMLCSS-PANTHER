@@ -203,3 +203,20 @@ nav ul a:active{
     text-align: justify;
     width: 200%;
 }
+
+/* Design section - history*/
+#history{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    margin-right: 50%;
+    margin-left: 10%;
+    padding-left: 20%;
+    padding: 10px;
+    text-align: justify;
+}
+#history .container{
+    font-size: 15px;
+    padding-top: 5%;
+
+}

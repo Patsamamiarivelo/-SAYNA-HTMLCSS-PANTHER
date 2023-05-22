@@ -72,6 +72,7 @@ nav{
     align-items: center;
     margin: 0px;
     padding: 0px;
+    padding-top: 20px;
 }
 nav ul{
     list-style: none;
@@ -81,6 +82,7 @@ nav ul{
     width: 20%;
     left: 70%;
     justify-content: space-between;
+    padding-top: 20px;
 }
 nav ul a{
     color: var(--white-color);
@@ -88,6 +90,7 @@ nav ul a{
     font-weight: 100;
     font-family: 'beyno';
     text-decoration: none; 
+
 }
 nav ul a:hover{
     font-weight: bold;
@@ -156,67 +159,226 @@ nav ul a:active{
 #personnage-principal p{
     padding-top: 50px;
     text-align: left;
-    width: 105%;
+    width: 90%;
     z-index: 1;
 }
 .black-panther{
     display: flex;
+    flex-direction: row;
     margin-top: -200px;
-    margin-right: -7%;
+    margin-right: 160px;
     z-index: 2;
-    width: auto;
+    width: 750px;
+    height: 600px;
 }
 
 /* Design section - personnage*/
 #personnage{
-    margin-left: -100px;
-    margin: 5px 0px;
-    padding: 20px 5px;
+    width: 100%;
+    padding-left: 10%;
 }
 #personnage .container{
     display: flex;
-    position: relative;
+    flex-direction: row;
     background-color: var(--bluedark-color);
-    padding-right: 2px;
-    width: 80%;
-
+    padding-left: 50px;
+    width: auto;
+    height: 343px;
 }
 #personnage .content{
     display: flex;
     position: relative;
     align-items: center;
-    padding: 0px 15px;
-    padding-left: 40px;
-    padding-right: 0;
-    margin: 5px 5px;
-    width: 700%;
-
-}
-#personnage .personnage-image{
-    position: relative;
-    padding: 1px ;
-    margin: 20px;
+    padding-left: -80px;
     width: 100%;
 }
+#personnage .personnage-image{
+    display: flex;
+    padding: 15px;
+}
 #personnage .personnage-text{
-    display:block;
     text-align: justify;
-    width: 200%;
+    padding: 20px;
+    width: 100%;
 }
 
-/* Design section - history*/
+/*Design section - history*/
 #history{
-    display: flex;
-    flex-direction: row;
-    margin-top: 5%;
-    margin-right: 50%;
-    margin-left: 10%;
-    padding-left: 20%;
-    padding: 10px;
-    text-align: justify;
+    margin-top: 10%;
 }
 #history .container{
-    font-size: 15px;
-    padding-top: 5%;
-
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    text-align: justify;
+    padding-left: 5%;
+}
+.biographie{
+    padding-left: 10%;
+}
+.bio-tchalla{
+    background-color: var(--grayish-color);
+    border-radius: 0.8rem;
+    margin: 30% 5%;
+    width: 480px;
+    height: 800px;
+}
+.tchalla{
+    position: relative;
+    top: -220px;
+    LEFT: 40px;
+}
+.bio-tchalla .content{
+    margin-top: -45%;
+}
+h4{
+    color: #0B0B0B;
+    height: 40px;
+    text-align: center;
+    font-size: 25px;
+}
+button{
+    background: var(--blue-color);
+    color: white;
+    padding: 3% 8% 3% 4%;
+    border: none;
+    border-radius: 0.5rem;
+    font-family: 'cantarell';
+    justify-content: space-between;
+    text-align: center;
+}
+.btn{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.bio-tchalla p{
+    color: #0B0B0B;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin: 30px 5px 30px;
+    font-size: 13px;
+}
+.bio-tchalla span{
+    font-weight: bold;
+}
+.black{
+    position: relative;
+    left: 50px;
+}
+ /* Design section - contact*/
+ #contact{
+    background-image: url(../a-illustrations/Pantherhome7.png) ;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 60vw;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    padding: 5%;
+    color: black;
+ }
+ #contact .container{
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1.0) 20%, rgba(242, 206, 242, .2) 60%);
+    border-radius: 30%;
+    text-align: center;
+    grid-column: 2/3;
+    padding: 40px;
+    margin: 30px;
+    width: 90%;
+    height: 75%;
+ }
+ #contact span{
+    font-weight: bold;
+    font-size: 40px;
+ }
+ input[type="name"], [type="email"]{
+    width: 60%;
+    height: 3vw;
+    border-radius: 3em;
+    border: 1px solid var(--blue-color);
+    padding: 1% 2%;
+    margin: 10px;
+    background-color: transparent;
+    font-size: 12px;
+    color: var(--blue-color);
+ }
+ textarea{
+    width: 60%;
+    height: 12vw;
+    border-radius: 3em;
+    border: 1px solid var(--blue-color);
+    padding: 2% 2%;
+    margin: 10px;
+    background-color: transparent;
+    font-size: 12px;
+    color: var(--blue-color);
+ }
+ input[type="submit"]{
+    width: 20%;
+    height: 60px;
+    border-radius: 3em;
+    border: 1px solid var(--blue-color);
+    padding: 2% 5%;
+    margin: 5% 10%;
+    background-color: var(--magentalight-color);
+    font-size: 12px;
+    font-weight: bolder;
+    color: var(--blue-color);
+ }
+ #contact input[type="submit"]:hover{
+    box-shadow: var(--magentalight-color) 0px 0px 30px;
+    cursor: pointer;
+}
+ /*Design -footer*/
+footer{
+    background-image: url(../../allpages/back_footer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 780px;
+    color: var(--White-color);
+}
+footer .container{
+    margin-top: 50px;
+    position: relative;
+    display: block;
+}
+footer .img{
+    padding-top: 100px;
+}
+footer .logos{
+    padding-top: -50px;
+    position: relative;
+    bottom: 230px;
+    left: 80px;
+}
+footer .image{
+    transition: transform 0.3s ease;
+}
+footer .image:hover{
+    transform: scale(1.1);
+}
+footer h2{
+    font-family: 'cantarell';
+    position: relative;
+    color: var(--white-color);
+    letter-spacing: 50%;
+}
+footer .page{
+    position: relative;
+    bottom: 400px;
+    left: 40%;
+    font-family: 'cantarell';
+    padding: 10px 20px;
+}
+footer .icon{
+    position: relative;
+    bottom: 500px;
+    left: 70%;
+}
+footer .social{
+padding: 12px 20px;
+}
+footer .text{
+    position: relative;
+    bottom: 350px;
+    left: 45%;
 }

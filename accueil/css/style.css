@@ -108,7 +108,7 @@ nav ul a:active{
     -webkit-filter: invert(67%) sepia(10%) saturate(2002%) hue-rotate(233deg) brightness(104%) contrast(90%);
     filter: invert(67%) sepia(10%) saturate(2002%) hue-rotate(233deg) brightness(104%) contrast(90%);
 }
-    .navbar { 
+.navbar { 
     width: 80%;
     margin: 0 auto;
 }
@@ -333,34 +333,45 @@ footer{
     background-image: url(../../allpages/back_footer.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 780px;
+    height: 790px;
     color: var(--White-color);
 }
 footer .container{
-    margin-top: 50px;
+    margin-top: 90px;
     position: relative;
     display: block;
 }
-footer .img{
-    padding-top: 100px;
-}
-footer .logos{
-    padding-top: -50px;
-    position: relative;
-    bottom: 230px;
-    left: 80px;
-}
 footer .image{
     transition: transform 0.3s ease;
+    display: block;
 }
 footer .image:hover{
     transform: scale(1.1);
+}
+footer .img{
+    padding-top: 150px;
+} 
+footer .logos{
+    padding-top: -50px;
+    position: relative;
+    bottom: 250px;
+    left: 80px;
 }
 footer h2{
     font-family: 'cantarell';
     position: relative;
     color: var(--white-color);
-    letter-spacing: 50%;
+    letter-spacing: 8px;
+}
+footer a{
+    font-family: 'cantarell';
+    color: var(--white-color);
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 20px
+}
+footer a:hover{
+    text-decoration: underline;
 }
 footer .page{
     position: relative;
@@ -375,7 +386,12 @@ footer .icon{
     left: 70%;
 }
 footer .social{
-padding: 12px 20px;
+    padding: 12px 30px;
+    transition: transform 0.3s ease;
+
+}
+footer .social:hover{
+    transform: scale(1.1);
 }
 footer .text{
     position: relative;

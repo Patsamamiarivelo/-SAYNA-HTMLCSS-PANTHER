@@ -1,0 +1,185 @@
+@import url(' https://fonts.cdnfonts.com/css/panthera?styles=58238 ' ); 
+@import url(' https://fonts.cdnfonts.com/css/beyno?styles=27197 ');
+@import url(' https://fonts.cdnfonts.com/css/wakanda-forever?styles=84151 ' );
+@import url(' https://fonts.cdnfonts.com/css/cantarell?styles=159,158,157,156 ');                            
+
+@font-face {
+    font-family: 'panthera';
+    src: url(../../panthera.ttf);
+}
+@font-face {
+    font-family: 'beyno';
+    src: url(../../BEYNO.ttf);
+    font-size: 32px;
+}
+@font-face {
+    font-family: 'wakanda';
+    src: url(../../wakandaforever-regular.ttf);
+    font-size: 43px;
+}
+@font-face {    
+    font-family: 'cantarell';
+    src: url(../../Cantarell-Regular.ttf);
+}
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}   
+:root{
+    --white-color: #fff;
+    --magentalight-color: #efcef2;
+    --grayish-color: #9e97b7;
+    --magentasoft-color: #df99f2;
+    --bluesoft-color: #3d2da6;
+    --blue-color: #07338c;
+    --bluedark-color: #021740;
+    --radial-gradient:(#11213F 0%, #0B0B0B 39,1%, #021740 94,57%) ;
+}
+body{
+    background: radial-gradient(126.67% 350.28% at -21.35% 0%, #11213F 0%, #0B0B0B 39.1%, rgba(2, 23, 64, 0.837641) 94.57%, rgba(2, 23, 64, 0) 100%) ;
+    color: var(--white-color);
+    font-family: 'cantarell';
+    font-size: 16px;
+
+}
+.container{
+    width: 70%;
+    margin: 0 auto;
+}
+h1{
+    font-family: 'panthera';
+    font-size: 60px;
+    color: var(--magentasoft-color);
+}
+h2{
+    font-family: 'beyno';
+    font-size: 32px;
+    color: var(--magentasoft-color);
+}
+h3{
+    font-family: 'beyno';
+    font-size: 20px;
+    color: var(--magentasoft-color);
+}
+.voir-plus{
+    text-decoration: underline;
+
+}
+/* Design de la navigation */
+nav{
+    display: block;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 20px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    position: absolute;
+    top: 0;
+    width: 20%;
+    left: 70%;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+nav ul a{
+    color: var(--white-color);
+    font-size: 20px;
+    font-weight: 100;
+    font-family: 'beyno';
+    text-decoration: none; 
+
+}
+nav ul a:hover{
+    font-weight: bold;
+    text-decoration: underline;
+}
+nav ul a:active{
+    color: var(--magentasoft-color);
+    font-weight: bold;
+    text-decoration: underline;
+}
+.logo{
+    padding: 0px;
+}
+.logo:hover{
+    -webkit-filter: invert(67%) sepia(10%) saturate(2002%) hue-rotate(233deg) brightness(104%) contrast(90%);
+    filter: invert(67%) sepia(10%) saturate(2002%) hue-rotate(233deg) brightness(104%) contrast(90%);
+}
+    .navbar { 
+    width: 80%;
+    margin: 0 auto;
+}
+
+ /*Design -footer*/
+ footer{
+    background-image: url(../../allpages/back_footer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 790px;
+    color: var(--White-color);
+}
+footer .container{
+    margin-top: 90px;
+    position: relative;
+    display: block;
+}
+footer .image{
+    transition: transform 0.3s ease;
+    display: block;
+}
+footer .image:hover{
+    transform: scale(1.1);
+}
+footer .img{
+    padding-top: 150px;
+} 
+footer .logos{
+    padding-top: -50px;
+    position: relative;
+    bottom: 250px;
+    left: 80px;
+}
+footer h2{
+    font-family: 'cantarell';
+    position: relative;
+    color: var(--white-color);
+    letter-spacing: 8px;
+}
+footer a{
+    font-family: 'cantarell';
+    color: var(--white-color);
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 20px
+}
+footer a:hover{
+    text-decoration: underline;
+}
+footer .page{
+    position: relative;
+    bottom: 400px;
+    left: 40%;
+    font-family: 'cantarell';
+    padding: 10px 20px;
+}
+footer .icon{
+    position: relative;
+    bottom: 500px;
+    left: 70%;
+}
+footer .social{
+    padding: 12px 30px;
+    transition: transform 0.3s ease;
+
+}
+footer .social:hover{
+    transform: scale(1.1);
+}
+footer .text{
+    position: relative;
+    bottom: 350px;
+    left: 45%;
+}

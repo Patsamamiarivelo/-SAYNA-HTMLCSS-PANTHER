@@ -41,30 +41,51 @@ body{
     color: var(--white-color);
     font-family: 'cantarell';
     font-size: 16px;
+}
 
-}
-.container{
-    padding: 200px;
-}
 h1{
+    letter-spacing: 3px;
     font-family: 'beyno';
-    font-size: 50px;
+    font-size: 65px;
     color: var(--magentasoft-color);
+    padding-top:25%;
 }
 h2{
     font-family: 'wakanda';
     font-size: 43px;
     color: var(--magentasoft-color);
 }
-/*h3{
+h3{
     font-family: 'beyno';
     font-size: 20px;
     color: var(--magentasoft-color);
-}*/
-.voir-plus{
-    text-decoration: underline;
-
+    margin-bottom: -30px;
+    margin-top: 30px;
 }
+p{
+    width: 100%;
+    padding-top: 50px;
+    text-align: justify;
+}
+/*responsive*/
+@media (min-width: 320px) and (max-width: 728px) {
+    header .logo {
+      width: 30%;
+    }
+    header .logo img {
+      width: 100%;
+    }
+  
+    nav ul {
+      width: 60%;
+    }
+    nav ul a {
+      font-size: 3vw;
+    }
+    section, div, span, form, img{
+        width: 70%;
+    }
+  }
 /* Design de la navigation */
 nav{
     display: block;
@@ -111,34 +132,78 @@ nav ul a:active{
     width: 80%;
     margin: 0 auto;
 }
-
+h1, h2 ,h3, p, img, iframe, a, input, div{
+    animation: fade-in 0.3s ease-in-out forwards;
+}
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
 /* Design section - wakanda*/
+
 #wakanda{
-   display: flex;
-   flex-direction: row;
-   position: relative;
+    width: 100%;
 }
 #wakanda .container{
-    object-fit: cover;
+    background-image: url('../w-illustrations/Pantherwakanda1.png');
+    image-rendering: pixelated;
+    height: 900px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0 10%;
+    background-position-x: 200px;
+    animation: fade-in 2s ease-in-out forwards;
+}
+.p{
+    position: relative;
+    width: 35%;
+}
+
+/* Design section - origine*/
+#origine{
+    width: 100%;
+}
+#origine .container{
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    position: relative;
+    Background-image: url('../w-illustrations/Pantherwakanda2.png');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 1700px;
+    top: -60px;
+}
+.col1, .col2{
+    padding: 20%;
+    margin: 0;
+    width: 100%;
+}
+.img2-1{
+    top: 50px;
     position: relative;
 }
-#wakanda .content{
-    display: flex;
-    flex-direction: row;
-    width: 50%;
-}
-.img1{
+iframe{
     position: relative;
-    z-index: 1;
-    top: -300px;
+    height: 300px;
+    width: 470px;
+    padding: 20px 10px;
 }
+
  /*Design -footer*/
  footer{
     background-image: url(../../allpages/back_footer.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 790px;
+    height: 50%;
+    width: 100%;
     color: var(--White-color);
+    padding: 0 20%;
 }
 footer .container{
     margin-top: 90px;
@@ -166,6 +231,7 @@ footer h2{
     position: relative;
     color: var(--white-color);
     letter-spacing: 8px;
+    font-size: 32px;
 }
 footer a{
     font-family: 'cantarell';
@@ -202,3 +268,4 @@ footer .text{
     bottom: 350px;
     left: 45%;
 }
+

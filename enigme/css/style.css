@@ -43,29 +43,54 @@ body{
     font-size: 16px;
 
 }
-.container{
-    width: 70%;
-    margin: 0 auto;
-}
+
 h1{
-    font-family: 'panthera';
-    font-size: 60px;
+    letter-spacing: 3px;
+    font-family: 'beyno';
+    font-size: 65px;
     color: var(--magentasoft-color);
+    padding-top:25%;
+    
 }
 h2{
-    font-family: 'beyno';
-    font-size: 32px;
+    font-family: 'wakanda';
+    font-size: 43px;
     color: var(--magentasoft-color);
+   
 }
 h3{
     font-family: 'beyno';
-    font-size: 20px;
+    font-size: 60px;
     color: var(--magentasoft-color);
+    margin-bottom: -30px;
+    margin-top: 30px;
+    letter-spacing: 8px;
+    
 }
-.voir-plus{
-    text-decoration: underline;
-
+p{
+    width: 100%;
+    padding-top: 50px;
+    text-align: justify;  
 }
+/*responsive*/
+@media (min-width: 320px) and (max-width: 728px) {
+    header .logo {
+      width: 30%;
+    }
+    header .logo img {
+      width: 100%;
+    }
+  
+    nav ul {
+      width: 60%;
+    }
+    nav ul a {
+      font-size: 3vw;
+    }
+    section, div, span, form, img{
+        width: 60%;
+    }
+  }
 /* Design de la navigation */
 nav{
     display: block;
@@ -108,18 +133,144 @@ nav ul a:active{
     -webkit-filter: invert(67%) sepia(10%) saturate(2002%) hue-rotate(233deg) brightness(104%) contrast(90%);
     filter: invert(67%) sepia(10%) saturate(2002%) hue-rotate(233deg) brightness(104%) contrast(90%);
 }
-    .navbar { 
+.navbar { 
     width: 80%;
     margin: 0 auto;
 }
+h1, h2 ,h3, p, img, iframe, a, input, div{
+    animation: fade-in 0.3s ease-in-out forwards;
+}
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+/* Design section - dora*/
+#dora .container{
+    display: flex;
+    flex-direction: row;
+}
+#dora .content{
+    width: 100%;
+    object-fit: contain;
+}
+.img1{
+    height: 800px;
+    width: 500px;
+    margin-top: -170px;
+    position: relative;
+}
+#dora h3{
+    letter-spacing: 6px;
+    position: relative;
+    text-align: left;
+    margin-left: 60%;
+    margin-top: -300px;
+}
+#dora p{
+    position: relative;
+    text-align: justify;
+    width: 28%;
+    height: 10%;
+    margin-left: 1200px;
+    bottom: 400px;
+}
+.img2{
+    margin-left: 1050px;
+    margin-top: 100px;
+}
+.img3{
+    position: relative;
+    margin-left: 1100px;
+    margin-top: -150px;
+}
+/* Design section - wakanda*/
+#wakanda{
+    display: flex;
+    width: 100%;
+}
+#wakanda .container{
+    padding: 5% 10%;
+}
+.transcript h2{
+    letter-spacing: 6px;
+    text-align: justify;
+    width: 80%;    
+}
+.transcript .alpha{
+    padding-top: 5%;
+}
+.transcript .alpha span{
+    font-family: 'wakanda';
+}
+.img2-1{
+    position: relative;
+    margin-left: 850px;
+    margin-top: 200px;
+}
+.beta{
+    position: relative;
+    text-align: center;
+    width: 35%;
+    height: 10%;
+    margin-left: 950px;
+    bottom: 200px;
+}
+.beta, .img2-1{
+    margin-top: -6%;
+}
+/* Formulaire*/
+.reponse{
+    display: grid;
+    grid-template-columns: 1fr ;
+    margin-top: -15%;
+    padding: 0 10%;
+}
+span{
+    padding: 20px;
+}
 
+input[type="answer"]{
+    border-radius: 3em;
+    border: 1px solid var(--magentasoft-color);
+    background-color: transparent;
+    font-size: 15px;
+    font-weight: bolder;
+    color: var(--magentasoft-color);
+    padding: 1% 3%;
+    width: 30%;
+}
+input[type="submit"]{
+    position: relative;
+    border-radius: 3em;
+    border: 1px solid var(--blue-color);
+    background-color: var(--magentalight-color);
+    font-size: 16px;
+    font-weight: bolder;
+    color: var(--blue-color);
+    text-align: center;
+    padding: 1% 3%;
+    margin-top: 50px;
+    margin-left: 10%;
+ }
+ input[type="submit"]:hover{
+    box-shadow: var(--magentalight-color) 0px 0px 30px;
+    cursor: pointer;
+}
  /*Design -footer*/
  footer{
     background-image: url(../../allpages/back_footer.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 790px;
+    height: 50%;
+    width: 100%;
     color: var(--White-color);
+    padding: 0 20%;
 }
 footer .container{
     margin-top: 90px;

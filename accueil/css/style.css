@@ -44,7 +44,7 @@ body{
 
 }
 .container{
-    width: 70%;
+    width: 100%;
     margin: 0 auto;
 }
 h1{
@@ -64,8 +64,28 @@ h3{
 }
 .voir-plus{
     text-decoration: underline;
-
 }
+/*responsive*/
+@media (min-width: 320px) and (max-width: 728px) {
+    header .logo {
+      width: 30%;
+    }
+    header .logo img {
+      width: 100%;
+    }
+  
+    nav ul {
+      width: 60%;
+    }
+    nav ul a {
+      font-size: 3vw;
+    }
+    section, div, span, form, img{
+        width: 60%;
+    }
+  }
+
+
 /* Design de la navigation */
 nav{
     display: block;
@@ -112,6 +132,19 @@ nav ul a:active{
     width: 80%;
     margin: 0 auto;
 }
+h1, h2 ,h3, p, img, iframe, a, input, div{
+    animation: fade-in 0.3s ease-in-out forwards;
+}
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
 /*Design scroll*/
 .scroll {
     display: flex;
@@ -144,13 +177,15 @@ nav ul a:active{
     left: 70px;
     margin-top: 0;
 }
+
 /* Design section - personnage-principal*/
 #personnage-principal .content{
-    padding-top: 200px;
+    padding-top: 100px;
     margin-left: -40px;
     margin-right: -90px;
     display: flex;
     flex-direction: row;
+    padding: 10% 15%;
 }
 #personnage-principal .personnage-text{
     margin-left: 50%;
@@ -203,6 +238,13 @@ nav ul a:active{
 }
 
 /*Design section - history*/
+@media (min-width: 320px) and (max-width: 768px) {
+    #history {
+    width: 20vw;
+    right: 40%;
+    max-height: 100%;
+}
+}
 #history{
     margin-top: 10%;
 }
@@ -329,12 +371,14 @@ button{
     cursor: pointer;
 }
  /*Design -footer*/
-footer{
+ footer{
     background-image: url(../../allpages/back_footer.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 790px;
+    height: 50%;
+    width: 100%;
     color: var(--White-color);
+    padding: 0 20%;
 }
 footer .container{
     margin-top: 90px;
@@ -398,3 +442,11 @@ footer .text{
     bottom: 350px;
     left: 45%;
 }
+/*responsives footer*/
+@media (min-width: 320px) and (max-width: 768px) {
+    footer {
+      display: flex;
+      flex-direction: column;
+      height: auto;
+    }
+ }

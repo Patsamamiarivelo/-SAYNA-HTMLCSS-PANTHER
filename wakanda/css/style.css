@@ -25,7 +25,7 @@
     margin: 0; 
     padding: 0;
     box-sizing: border-box;
-}   
+}  
 :root{
     --white-color: #fff;
     --magentalight-color: #efcef2;
@@ -37,10 +37,18 @@
     --radial-gradient:(#11213F 0%, #0B0B0B 39,1%, #021740 94,57%) ;
 }
 body{
+    width: auto;
     background: radial-gradient(126.67% 350.28% at -21.35% 0%, #11213F 0%, #0B0B0B 39.1%, rgba(2, 23, 64, 0.837641) 94.57%, rgba(2, 23, 64, 0) 100%) ;
     color: var(--white-color);
     font-family: 'cantarell';
     font-size: 16px;
+}
+@media screen and (max-width: 900px) {
+    body{
+        font-size: 10px;
+        position: relative;
+        padding: 0 25%;
+    }
 }
 
 h1{
@@ -50,11 +58,21 @@ h1{
     color: var(--magentasoft-color);
     padding-top:25%;
 }
+@media screen and (max-width: 900px) {
+    h1{
+        font-size: 30px;
+    }
+    }
 h2{
     font-family: 'wakanda';
     font-size: 43px;
     color: var(--magentasoft-color);
 }
+@media screen and (max-width: 900px) {
+    h2{
+        font-size: 20px;
+    }
+    }
 h3{
     font-family: 'beyno';
     font-size: 20px;
@@ -62,30 +80,17 @@ h3{
     margin-bottom: -30px;
     margin-top: 30px;
 }
+@media screen and (max-width: 900px) {
+    h3{
+        font-size: 15px;
+    }
+    }
 p{
     width: 100%;
     padding-top: 50px;
     text-align: justify;
 }
-/*responsive*/
-@media (min-width: 320px) and (max-width: 728px) {
-    header .logo {
-      width: 30%;
-    }
-    header .logo img {
-      width: 100%;
-    }
-  
-    nav ul {
-      width: 60%;
-    }
-    nav ul a {
-      font-size: 3vw;
-    }
-    section, div, span, form, img{
-        width: 70%;
-    }
-  }
+
 /* Design de la navigation */
 nav{
     display: block;
@@ -132,6 +137,15 @@ nav ul a:active{
     width: 80%;
     margin: 0 auto;
 }
+@media screen and (max-width: 900px) {
+    nav{
+        width: 100px;
+    }
+    nav ul a{
+    overflow-y: hidden;
+}
+}
+/*Animation fade-in*/
 h1, h2 ,h3, p, img, iframe, a, input, div{
     animation: fade-in 0.3s ease-in-out forwards;
 }
@@ -148,21 +162,27 @@ h1, h2 ,h3, p, img, iframe, a, input, div{
 /* Design section - wakanda*/
 
 #wakanda{
-    width: 100%;
+    width: auto;
 }
 #wakanda .container{
     background-image: url('../w-illustrations/Pantherwakanda1.png');
     image-rendering: pixelated;
+    width: auto;
     height: 900px;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 0 10%;
+    padding: 0 15%;
     background-position-x: 200px;
-    animation: fade-in 2s ease-in-out forwards;
 }
 .p{
     position: relative;
     width: 35%;
+}
+@media screen and (max-width: 900px) {
+    #wakanda{
+        width: 500px;
+        height: 500px;
+    }
 }
 
 /* Design section - origine*/
@@ -177,15 +197,15 @@ h1, h2 ,h3, p, img, iframe, a, input, div{
     background-repeat: no-repeat;
     background-position: top;
     background-size: 1700px;
-    top: -60px;
+    top: -80px;
 }
 .col1, .col2{
-    padding: 20%;
-    margin: 0;
+    padding: 20% 14%;
     width: 100%;
+    margin-left: 20px;
 }
 .img2-1{
-    top: 50px;
+    top: 20px;
     position: relative;
 }
 iframe{
@@ -194,51 +214,76 @@ iframe{
     width: 470px;
     padding: 20px 10px;
 }
-
+@media screen and (max-width: 900px) {
+    #origine{
+        width: 500px;
+        display: block;
+    }
+    .col1, .col2{
+        width: 200px;
+        position: relative;
+        margin-left: -100px ;
+    }
+    iframe{
+        width: 200px;
+        height: 150px;
+    }
+    .img2-1{
+        position: relative;
+        width: 50px;
+        height: 20px;
+    }
+}
  /*Design -footer*/
  footer{
     background-image: url(../../allpages/back_footer.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 50%;
-    width: 100%;
+    width: auto;
     color: var(--White-color);
     padding: 0 20%;
 }
 footer .container{
     margin-top: 90px;
     position: relative;
-    display: block;
-}
-footer .image{
-    transition: transform 0.3s ease;
-    display: block;
-}
-footer .image:hover{
-    transform: scale(1.1);
+    width: auto;
 }
 footer .img{
-    padding-top: 150px;
+    padding-top: 200px;
+    position: relative;
 } 
+
 footer .logos{
     padding-top: -50px;
     position: relative;
-    bottom: 250px;
-    left: 80px;
+    bottom: 220px;
+    left: 90px;
+}
+footer .logos:active{
+    -webkit-filter: invert(67%) sepia(10%) saturate(2002%) hue-rotate(233deg) brightness(104%) contrast(90%);
+    filter: invert(67%) sepia(10%) saturate(2002%) hue-rotate(233deg) brightness(104%) contrast(90%);
+}
+footer .image{
+    transition: transform 0.3s ease;
+}
+footer .image:hover{
+    transform: scale(1.1);
 }
 footer h2{
     font-family: 'cantarell';
     position: relative;
     color: var(--white-color);
-    letter-spacing: 8px;
-    font-size: 32px;
+    letter-spacing: 0.28em;
+    font-size: 22px;
+    padding-bottom: 20px;
 }
 footer a{
     font-family: 'cantarell';
     color: var(--white-color);
     text-decoration: none;
     font-size: 16px;
-    margin-top: 20px
+    margin-top: 20%;
 }
 footer a:hover{
     text-decoration: underline;
@@ -252,13 +297,12 @@ footer .page{
 }
 footer .icon{
     position: relative;
-    bottom: 500px;
+    bottom: 505px;
     left: 70%;
 }
 footer .social{
-    padding: 12px 30px;
-    transition: transform 0.3s ease;
-
+    padding: 20px 30px 0 0;
+    transition: transform 0.5s ease;
 }
 footer .social:hover{
     transform: scale(1.1);
@@ -268,4 +312,33 @@ footer .text{
     bottom: 350px;
     left: 45%;
 }
-
+@media screen and (max-width: 900px){
+    footer{
+        display: flex;
+      width: 325px;
+      height: auto;
+      margin-top: 150px;
+    }
+    footer .container{
+        position: relative;
+        width: 200px;
+    }
+    footer h2{
+        right: 100px;
+    }
+    .image{
+        position: relative;
+        width: 300px;
+        height: auto;
+    }
+    footer .page{
+        margin-top: 400px;
+        margin-right: 100px;
+    }
+    footer .icon{
+        position: relative;
+        display: block;
+        margin-top: 120px;
+        margin-right: 200px;
+    }
+  }
